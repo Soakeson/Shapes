@@ -2,9 +2,16 @@ import kotlin.math.pow
 import kotlin.math.sqrt
 
 class Line (
-    var p1: Point,
-    var p2: Point,
+    p1: Point,
+    p2: Point,
 ) {
+    var p1 = p1
+        get() = p1.copy()
+        private set
+    var p2 = p2
+        get() = p2.copy()
+        private set
+
     fun slope() : Double {
         return (p2.y - p1.y) / (p2.x - p1.x)
     }

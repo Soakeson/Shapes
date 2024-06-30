@@ -16,7 +16,7 @@ class EllipseTest {
         val p1 = Point(1.0,1.0)
         val e = Ellipse(p1, 1.0, 2.0)
         e.move(1.0, 1.0)
-        assertEquals(2.0, e.origin.y)
+        assertEquals(2.0, e.c.y)
     }
 
     @Test

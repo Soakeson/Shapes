@@ -1,9 +1,11 @@
 open class Ellipse(
-    var origin: Point,
+    c: Point,
     var rx: Double,
     var ry: Double
-)
-    : Shape() {
+) : Shape() {
+    var c = c
+        get() = c.copy()
+        private set
 
     init {
         if (rx == 0.0 || ry == 0.0) {
@@ -12,7 +14,7 @@ open class Ellipse(
     }
 
     override fun move(xDelta: Double, yDelta: Double) {
-        move(xDelta, yDelta, listOf(origin))
+        move(xDelta, yDelta, listOf(c))
     }
 
     override fun area() : Double {

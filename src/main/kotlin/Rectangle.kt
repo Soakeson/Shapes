@@ -1,9 +1,16 @@
 import kotlin.Exception
 
 open class Rectangle(
-    var p1: Point,
-    var p2: Point,
+    p1: Point,
+    p2: Point,
 ) : Shape() {
+    var p1 = p1
+        get() = p1.copy()
+        private set
+    var p2 = p2
+        get() = p2.copy()
+        private set
+
     var height = if (p1.y > p2.y) p1.y - p2.y else p2.y - p1.y
     var width = if (p1.x > p2.x) p1.x - p2.x else p2.x - p1.x
     init {

@@ -16,7 +16,7 @@ class CircleTest {
         val p1 = Point(1.0,1.0)
         val c = Circle(p1, 1.0)
         c.move(1.0, 1.0)
-        assertEquals(2.0, c.origin.y)
+        assertEquals(2.0, c.c.y)
     }
 
     @Test

@@ -7,4 +7,8 @@ abstract class Shape() {
             p.y += yDelta
         }
     }
+    protected fun points(points : List<Point>) : List<Point> {
+        val pointsCopy = points.map { it.copy() }
+        return pointsCopy
+    }
 }
