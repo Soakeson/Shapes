@@ -6,13 +6,10 @@ class Triangle (
     p3: Point
 ) : Shape() {
     var p1 = p1
-        get() = p1.copy()
         private set
     var p2 = p2
-        get() = p2.copy()
         private set
     var p3 = p3
-        get() = p3.copy()
         private set
 
     private val xCords = listOf<Double>(p1.x, p2.x, p3.x)

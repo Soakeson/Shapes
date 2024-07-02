@@ -6,10 +6,8 @@ class Line (
     p2: Point,
 ) {
     var p1 = p1
-        get() = p1.copy()
         private set
     var p2 = p2
-        get() = p2.copy()
         private set
 
     fun slope() : Double {

@@ -5,10 +5,8 @@ open class Rectangle(
     p2: Point,
 ) : Shape() {
     var p1 = p1
-        get() = p1.copy()
         private set
     var p2 = p2
-        get() = p2.copy()
         private set
 
     var height = if (p1.y > p2.y) p1.y - p2.y else p2.y - p1.y

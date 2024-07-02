@@ -4,7 +4,6 @@ open class Ellipse(
     var ry: Double
 ) : Shape() {
     var c = c
-        get() = c.copy()
         private set
 
     init {
