@@ -5,7 +5,7 @@ import kotlin.test.assertNotNull
 
 class CircleTest {
     @Test
-    fun testCircleContruction() {
+    fun testCircleConstruction() {
         val p1 = Point(1.0,1.0)
         val c = Circle(p1, 1.0)
         assertNotNull(c)

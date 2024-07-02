@@ -5,7 +5,7 @@ import kotlin.test.assertNotNull
 
 class EllipseTest {
     @Test
-    fun testEllipseContruction() {
+    fun testEllipseConstruction() {
         val p1 = Point(1.0,1.0)
         val e = Ellipse(p1, 1.0, 2.0)
         assertNotNull(e)

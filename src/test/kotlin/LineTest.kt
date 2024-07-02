@@ -4,7 +4,7 @@ import kotlin.test.assertNotNull
 
 class LineTest {
     @Test
-    fun testLineContruction() {
+    fun testLineConstruction() {
         val p1 = Point(1.0,1.0)
         val p2 = Point(2.0, 2.0)
         val l = Line(p1, p2)

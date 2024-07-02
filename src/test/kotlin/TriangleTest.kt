@@ -5,7 +5,7 @@ import kotlin.test.assertNotNull
 
 class TriangleTest {
     @Test
-    fun testTriangleContruction() {
+    fun testTriangleConstruction() {
         val p1 = Point(1.0,1.0)
         val p2 = Point(2.0,3.0)
         val p3 = Point(3.0,1.0)
@@ -29,12 +29,29 @@ class TriangleTest {
     }
 
     @Test
+    fun testTriangleHeight() {
+        val p1 = Point(1.0,1.0)
+        val p2 = Point(2.0,3.0)
+        val p3 = Point(3.0,1.0)
+        val t = Triangle(p1, p2, p3)
+        assertEquals(2.0, t.height, .02)
+    }
+
+    @Test
+    fun testTriangleBase() {
+        val p1 = Point(1.0,1.0)
+        val p2 = Point(2.0,3.0)
+        val p3 = Point(3.0,1.0)
+        val t = Triangle(p1, p2, p3)
+        assertEquals(2.0, t.base, .02)
+    }
+
+    @Test
     fun testTriangleArea() {
         val p1 = Point(1.0,1.0)
         val p2 = Point(2.0,3.0)
         val p3 = Point(3.0,1.0)
         val t = Triangle(p1, p2, p3)
-        println(t.area())
         assertEquals(2.0, t.area(), .02)
     }
 

@@ -5,7 +5,7 @@ import kotlin.test.assertNotNull
 
 class SquareTest {
     @Test
-    fun testSquareContruction() {
+    fun testSquareConstruction() {
         val p1 = Point(1.0,1.0)
         val p2 = Point(2.0, 2.0)
         val r = Square(p1, p2)
